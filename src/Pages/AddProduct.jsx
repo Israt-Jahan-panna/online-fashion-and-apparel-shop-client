@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddProduct = () => {
     return (
-        <div>
+        <div className='font-SometypeMono'>
             <h2>here you can add Product</h2>
         </div>
     );
