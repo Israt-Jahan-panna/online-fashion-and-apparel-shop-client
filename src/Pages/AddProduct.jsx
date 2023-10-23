@@ -1,11 +1,52 @@
 const AddProduct = () => {
+  const handelAddProduct = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const name = form.name.value;
+    const brand = form.brand.value;
+    const description = form.description.value;
+    const type = form.type.value;
+    const price = form.name.value;
+    const image = form.image.value;
+    const ratting = form.ratting.value;
+
+    const newProduct = {
+      name,
+      brand,
+      description,
+      type,
+      price,
+      image,
+      ratting,
+    };
+    console.log(newProduct);
+
+    // send data to the sever
+
+    // Send data to the server
+    fetch("http://localhost:5000/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      })
+  }
   return (
     <div className="font-SometypeMono">
       <div className=" w-3/4 mx-auto bg-slate-100 py-12 px-24 mb-7 rounded-md shadow-md">
         <h2 className="text-lg font-bold text-center">
           Add New Product Dettails{" "}
         </h2>
-        <form>
+        <form onSubmit={handelAddProduct}>
           <div className=" form-control mb-4">
             {/* product name */}
             <label className="block text-gray-700 font-bold">Name:</label>
@@ -80,33 +121,33 @@ const AddProduct = () => {
             <div className="rating rating-lg rating-half">
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="rating-hidden"
                 placeholder="ratting"
               />
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="bg-[#F85559] mask mask-star mask-full"
               />
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="bg-[#F85559] mask mask-star mask-full"
               />
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="bg-[#F85559] mask mask-star mask-full"
               />
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="bg-[#F85559] mask mask-star mask-full"
               />
               <input
                 type="radio"
-                name="rating-10"
+                name="ratting"
                 className="bg-[#F85559] mask mask-star mask-full"
               />
             </div>
@@ -115,7 +156,7 @@ const AddProduct = () => {
           <div className="  form-control mb-4 items-center ">
             <button
               type="submit"
-              className="bg-[#FF324D] w-72  text-white py-2 px-4 rounded-md"
+              className="bg-[#FF324D] lg:w-72  text-white py-2 px-4 rounded-md"
             >
               Add Product
             </button>
