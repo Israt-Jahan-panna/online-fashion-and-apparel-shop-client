@@ -5,7 +5,7 @@ const AddProduct = () => {
 
     const form = event.target;
     const name = form.name.value;
-    const brand = form.brand.value;
+    const brand = form.brand.value.toLowerCase();
     const description = form.description.value;
     const type = form.type.value;
     const price = form.price.value;
@@ -23,7 +23,7 @@ const AddProduct = () => {
     };
     console.log(newProduct);
 
-    // send data to the sever
+    
 
     // Send data to the server
     fetch("http://localhost:5000/products", {
