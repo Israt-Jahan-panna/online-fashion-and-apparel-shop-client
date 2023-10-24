@@ -1,0 +1,37 @@
+
+    [
+      {
+        "id":"1",
+        "name": "Nike",
+        "image": "https://i.ibb.co/ZW8DG3b/Nike-Logo.png"
+      },
+     
+      {
+        "id":"3",
+        "name": "Gucci",
+        "image": "https://i.ibb.co/sHFpRtR/3132d7cc02cdd9ceacd7bceb0738828d.png"
+      },
+      {
+        "id":"4",
+        "name": "Zara",
+        "image": "https://i.ibb.co/XFsQFQR/1280px-Zara-Logo-svg.png"
+      },
+      {
+        "id":"6",
+        "name": "Levi's",
+        "image": "https://i.ibb.co/MVRy0QL/Levis-logo-quer-svg.png"
+      },
+      {
+        "id":"5",
+        "name": "H&M",
+        "image": "https://i.ibb.co/CW00Qsn/H-M-Logo-svg.png"
+      },
+      {
+        "id":"2",
+        "name": "Adidas",
+        "image": "https://i.ibb.co/MRj9z9b/Adidas-logo.png"
+      }
+      
+    ]
+  
+  

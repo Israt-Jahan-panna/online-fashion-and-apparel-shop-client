@@ -8,6 +8,8 @@ import Registrations from "../../Pages/Registrations";
 import Home from "../../Pages/Home"
 import AddProduct from "../../Pages/AddProduct";
 import MyCart from "../../Pages/MyCart";
+import ProductDetails from "../../Compunents/ProductDetails/ProductDetails";
+import MyProducts from "../../Pages/MyProducts";
 
   const router = createBrowserRouter([
     {
@@ -18,6 +20,12 @@ import MyCart from "../../Pages/MyCart";
         {
             path:"/",
             element:<Home></Home>,
+          loader: () => fetch('/Brand.json')
+          
+        },
+        {
+            path:"/myproduct",
+            element:<MyProducts></MyProducts>,
           loader: () => fetch('http://localhost:5000/products')
           
         },
@@ -31,7 +39,9 @@ import MyCart from "../../Pages/MyCart";
           element:<MyCart></MyCart>
         },
         {
-          path:"",
+          path:"/productdetails",
+          element:<ProductDetails></ProductDetails>,
+          loader: () => fetch(`http://localhost:5000/products/${_id}`)
         },
         {
           path:"/registration",
