@@ -8,9 +8,9 @@ import Registrations from "../../Pages/Registrations";
 import Home from "../../Pages/Home"
 import AddProduct from "../../Pages/AddProduct";
 import MyCart from "../../Pages/MyCart";
-import ProductDetails from "../../Compunents/ProductDetails/ProductDetails";
-import MyProducts from "../../Pages/MyProducts";
 import BrandPage from "../../Pages/BrandPage";
+import Details from "../../Compunents/Details/Details";
+
 
   const router = createBrowserRouter([
     {
@@ -25,13 +25,13 @@ import BrandPage from "../../Pages/BrandPage";
           
         },
         {
-            path:"/myproduct",
-            element:<MyProducts></MyProducts>,
+            path:"/mycart",
+            element:<MyCart></MyCart>,
           loader: () => fetch('http://localhost:5000/products')
           
         },
         {
-          path:"/brand/:brandname",
+          path:"/brand/:name",
           element:<BrandPage></BrandPage>
         },
         {
@@ -40,14 +40,8 @@ import BrandPage from "../../Pages/BrandPage";
           
         },
         {
-          path:"/mycart",
-          element:<MyCart></MyCart>
-        },
-        {
-          path:"/productdetails",
-          element:<ProductDetails></ProductDetails>,
-          loader:() => fetch('')
-          
+          path: "/brand/:name/:_id",
+          element: <Details></Details>
         },
         {
           path:"/registration",

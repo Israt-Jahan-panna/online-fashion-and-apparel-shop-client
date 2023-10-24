@@ -1,14 +1,13 @@
 import React from "react";
 import Banner from "../Compunents/Header/Banner";
 import { useLoaderData } from "react-router-dom";
-import ProductCard from "../Compunents/productCard/ProductCard";
 import ExclusiveProducts from "../Compunents/ExclusiveProducts/ExclusiveProducts";
 import BestSell from "../Compunents/BestSell/BestSell";
 import BrandCard from "./BrandCard";
 
 const Home = () => {
   const brand = useLoaderData();
-  console.log(brand);
+  // console.log(brand);
   return (
     <div>
       <div>

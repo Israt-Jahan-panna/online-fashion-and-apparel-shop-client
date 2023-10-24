@@ -5,11 +5,11 @@ import BrandProduct from './BrandProduct';
 import BrandCarousel from './BrandCarousel';
 
 const BrandPage = () => {
-    const {brandname} = useParams();
+    const {name} = useParams();
     const  [brand , setBrand] = useState([]);
  
  useEffect(()=> {
-    fetch(`http://localhost:5000/brand/${brandname}`)
+    fetch(`http://localhost:5000/brand/${name}`)
     .then(res => res.json())
     .then(data => {
         setBrand(data);

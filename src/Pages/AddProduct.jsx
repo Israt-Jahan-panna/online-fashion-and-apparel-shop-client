@@ -126,41 +126,11 @@ const AddProduct = () => {
             />
           </div>
           {/* product ratting */}
-          <div className="form-control mt-8 mb-4 items-center">
-            <h3>Product Ratting</h3>
-            <div className="rating rating-lg rating-half">
-              <input
-                type="radio"
-                name="ratting"
-                className="rating-hidden"
-                placeholder="ratting"
-              />
-              <input
-                type="radio"
-                name="ratting"
-                className="bg-[#F85559] mask mask-star mask-full"
-              />
-              <input
-                type="radio"
-                name="ratting"
-                className="bg-[#F85559] mask mask-star mask-full"
-              />
-              <input
-                type="radio"
-                name="ratting"
-                className="bg-[#F85559] mask mask-star mask-full"
-              />
-              <input
-                type="radio"
-                name="ratting"
-                className="bg-[#F85559] mask mask-star mask-full"
-              />
-              <input
-                type="radio"
-                name="ratting"
-                className="bg-[#F85559] mask mask-star mask-full"
-              />
-            </div>
+          <div className="form-control mt-8 mb-4 ">
+            <div className="mb-4">
+      <label  className="block text-gray-700 font-bold">Rating:</label>
+      <input type="number" id="rating" name="rating" placeholder='productrating' className="w-full py-2 px-3 border border-gray-300 rounded-md " />
+    </div>
           </div>
           {/* add product button */}
           <div className="  form-control mb-4 items-center ">
