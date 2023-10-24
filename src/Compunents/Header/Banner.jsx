@@ -11,7 +11,7 @@ const Banner = () => {
             </a>
             <div className="absolute">
             <h3 className="relative left-24 text-lg font-semibold ">Get up to 50% off Today Only!</h3>
-            <p className="relative left-24 text-6xl font-extrabold ">Woman Fashion</p>
+            <p className="relative left-24 md:md:text-6xl font-extrabold ">Woman Fashion</p>
             <button className="btn bg-[#FF324D] relative left-24 rounded-lg mt-3">Shop Now</button>
             </div>
             <a href="#slide2" className="btn btn-circle">
@@ -29,8 +29,8 @@ const Banner = () => {
               ❮
             </a>
             <div className="absolute">
-            <h3 className="relative left-24 text-lg font-semibold ">50% off in all products</h3>
-            <p className="relative left-24 text-6xl font-extrabold ">Man Fashion</p>
+            <h3 className="relative left-24 md:text-lg font-semibold ">50% off in all products</h3>
+            <p className="relative left-24 md:text-6xl font-extrabold ">Man Fashion</p>
             <button className="btn bg-[#FF324D] relative left-24 rounded-lg mt-3">Shop Now</button>
             </div>
             <a href="#slide3" className="btn btn-circle">
@@ -45,8 +45,8 @@ const Banner = () => {
               ❮
             </a>
             <div className="absolute">
-            <h3 className="relative left-24 text-lg font-semibold ">50% off in Taking your Viewing Experience to Next Level</h3>
-            <p className="relative left-24 text-6xl font-extrabold ">Summer Sale</p>
+            <h3 className="relative left-24 md:text-lg font-semibold ">50% off in Taking your Viewing <br />Experience to Next Level</h3>
+            <p className="relative left-24 md:text-6xl font-extrabold ">Summer Sale</p>
             <button className="btn bg-[#FF324D] relative left-24 rounded-lg mt-3">Shop Now</button>
             </div>
             <a href="#slide1" className="btn btn-circle">
