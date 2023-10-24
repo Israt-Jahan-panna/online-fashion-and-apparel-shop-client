@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Compunents/Header/Banner";
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../Compunents/productCard/ProductCard";
+import ExclusiveProducts from "../Compunents/ExclusiveProducts/ExclusiveProducts";
 
 const Home = () => {
   const products = useLoaderData();
@@ -18,6 +19,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <ExclusiveProducts></ExclusiveProducts>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 
 
+// eslint-disable-next-line react/prop-types
 const ProductCard = ({product}) => {
-    const { name,
+    const {
         brand,
         description,
         image,
