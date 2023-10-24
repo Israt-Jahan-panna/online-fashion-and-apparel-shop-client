@@ -3,6 +3,7 @@ import Banner from "../Compunents/Header/Banner";
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../Compunents/productCard/ProductCard";
 import ExclusiveProducts from "../Compunents/ExclusiveProducts/ExclusiveProducts";
+import BestSell from "../Compunents/BestSell/BestSell";
 
 const Home = () => {
   const products = useLoaderData();
@@ -18,8 +19,13 @@ const Home = () => {
             <ProductCard key={product._id} product={product}></ProductCard>
           ))}
         </div>
-      </div>
+      </div >
+      <div className="mx-24">
       <ExclusiveProducts></ExclusiveProducts>
+      </div>
+      <div >
+        <BestSell></BestSell>
+      </div>
     </div>
   );
 };
