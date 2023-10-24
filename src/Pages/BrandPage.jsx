@@ -22,11 +22,13 @@ const BrandPage = () => {
             <div>
                 <BrandCarousel></BrandCarousel>
             </div>
-            {
+           <div className='grid md:grid-cols-2 lg:grid-cols-3'>
+           {
                 brand?.map((product) => { 
                     return <BrandProduct key={product._id}  product={product} ></BrandProduct>
                 } )
             }
+           </div>
         </div>
     );
 };
