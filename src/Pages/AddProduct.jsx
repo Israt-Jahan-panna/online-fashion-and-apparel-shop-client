@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 const AddProduct = () => {
   const handelAddProduct = (event) => {
     event.preventDefault();
@@ -35,10 +36,19 @@ const AddProduct = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        if(data.insertedId){
+            Swal.fire({
+                title: 'Thank You!',
+                text: 'Product Added Successfully',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+              })
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
       })
+      
   }
   return (
     <div className="font-SometypeMono">
