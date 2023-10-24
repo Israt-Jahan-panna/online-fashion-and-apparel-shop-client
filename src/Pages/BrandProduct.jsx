@@ -6,7 +6,7 @@ const BrandProduct = ({ product }) => {
 
   return (
     <div className="mx-24 font-SometypeMono">
-      <div className="justify-center items-center">
+      <div className="text-center">
         <h4 className="uppercase text-2xl font-extrabold w-full">
           Product Of {brand}
         </h4>

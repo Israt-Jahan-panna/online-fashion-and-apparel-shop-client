@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
-const ProductCard = ({product}) => {
+const ProductCard = ({products}) => {
     const {
       _id,
         brand,
         description,
         image,
-        } = product ||{}
+        } = products ||{}
         const handelDetails = () =>{
 
         }
