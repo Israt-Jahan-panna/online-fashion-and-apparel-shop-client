@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBwFwQ5FxvVLTf24Qehsj_NIo-85fiWr-Y",
-  authDomain: "social-event-management-dcf23.firebaseapp.com",
-  projectId: "social-event-management-dcf23",
-  storageBucket: "social-event-management-dcf23.appspot.com",
-  messagingSenderId: "174991734242",
-  appId: "1:174991734242:web:0b81ed5646c9e4b7e6b5bb"
+  apiKey: "AIzaSyDgBSyn7yPfj86UiZmZf1RgejKrWDx0NQ0",
+  authDomain: "fashion-apparel-shop-client.firebaseapp.com",
+  projectId: "fashion-apparel-shop-client",
+  storageBucket: "fashion-apparel-shop-client.appspot.com",
+  messagingSenderId: "934110634390",
+  appId: "1:934110634390:web:ac0e36e0443ec0976ebdb7"
 };
 
 // Initialize Firebase

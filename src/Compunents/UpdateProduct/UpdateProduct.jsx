@@ -31,7 +31,7 @@ const UpdateProduct = () => {
         
     
         // Send data to the server
-        fetch(`https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/product/${_id}`, {
+        fetch(`https://fashion-and-apparel-shop-server-6ol0g5b2m-israt-jahans-projects.vercel.app/product/${_id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

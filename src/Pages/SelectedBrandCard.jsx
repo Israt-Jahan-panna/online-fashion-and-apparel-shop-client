@@ -7,7 +7,7 @@ const SelectedBrandCard = (props) => {
 
   useEffect(() => {
     // Fetch products based on the brand name
-    fetch(`https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/products/${brandName}`)
+    fetch(`https://fashion-and-apparel-shop-server-6ol0g5b2m-israt-jahans-projects.vercel.app/products/${brandName}`)
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);

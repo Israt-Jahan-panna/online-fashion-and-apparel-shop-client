@@ -29,7 +29,7 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
         {
             path:"mycart",
             element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-            loader: () => fetch('https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/myproduct')
+            loader: () => fetch('https://fashion-and-apparel-shop-server-6ol0g5b2m-israt-jahans-projects.vercel.app/myproduct')
           
           
         },
@@ -49,7 +49,7 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
         {
           path:"/updateproduct/:id", 
           element:<UpdateProduct></UpdateProduct>,
-          loader: ({params}) => fetch(`https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/product/${params.id}`)
+          loader: ({params}) => fetch(`https://fashion-and-apparel-shop-server-6ol0g5b2m-israt-jahans-projects.vercel.app/product/${params.id}`)
         },
         {
           path:"/registration",
