@@ -10,7 +10,7 @@ const AddProduct = () => {
     const type = form.type.value;
     const price = form.price.value;
     const image = form.image.value;
-    const ratting = form.ratting.value;
+    const rating = form.rating.value;
 
     const newProduct = {
       name,
@@ -19,7 +19,7 @@ const AddProduct = () => {
       type,
       price,
       image,
-      ratting,
+      rating,
     };
     console.log(newProduct);
 
@@ -125,7 +125,7 @@ const AddProduct = () => {
               className="w-full py-2 px-3 border border-gray-300 rounded-md"
             />
           </div>
-          {/* product ratting */}
+          {/* product rating */}
           <div className="form-control mt-8 mb-4 ">
             <div className="mb-4">
       <label  className="block text-gray-700 font-bold">Rating:</label>
