@@ -1,25 +1,16 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from 'react';
-import ProductCard from '../Compunents/productCard/ProductCard';
-import { useParams } from 'react-router-dom';
+import { useLoaderData } from "react-router-dom";
+import ProductCard from "../Compunents/productCard/ProductCard";
+
 
 const MyCart = () => {
-  const { name, _id } = useParams();
-  const  [products , setBrand] = useState([]);
-
-  useEffect(()=> {
-    fetch(`http://localhost:5000/brand/${name}/${_id}`)
-    .then(res => res.json())
-    .then(data => {
-        setBrand(data);
-    })
-  },[])
+   const myProduct = useLoaderData ();
     return (
-        <div>
+        <div className="font-SometypeMono">
+          <h3 className="font-bold text-2xl text-center">My Added Products</h3>
           <div>
              <div className="mx-24">
         <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-2 gap-6">
-          {products.map((products) => (
+          {myProduct.map((products) => (
             <ProductCard key={products._id} products={products}></ProductCard>
           ))}
         </div>

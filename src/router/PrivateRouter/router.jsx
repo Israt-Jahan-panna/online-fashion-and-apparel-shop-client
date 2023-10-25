@@ -25,9 +25,10 @@ import Details from "../../Compunents/Details/Details";
           
         },
         {
-            path:"/mycart",
+            path:"mycart",
             element:<MyCart></MyCart>,
-          // loader: () => fetch('http://localhost:5000/products')
+            loader: () => fetch('http://localhost:5000/myproduct')
+          
           
         },
         {

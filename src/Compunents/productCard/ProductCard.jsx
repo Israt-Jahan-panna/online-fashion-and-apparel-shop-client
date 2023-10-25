@@ -8,6 +8,7 @@ const ProductCard = ({products}) => {
         brand,
         description,
         image,
+        name
         } = products ||{}
         const handelDetails = () =>{
 
@@ -21,9 +22,9 @@ const ProductCard = ({products}) => {
     <h2 className="card-title mt-7 font-extrabold text-2xl">{brand}</h2>
     <p>{description}</p>
     <div className="card-actions justify-end">
-      <Link to={`/productdetails/${_id}`}>
+      
       <button onClick={handelDetails} className="btn bg-[#FF324D]">Details</button>
-      </Link>
+     
     </div>
   </div>
 </div>

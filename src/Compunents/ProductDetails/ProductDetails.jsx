@@ -1,8 +1,44 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
+
 
 const ProductDetails = ({product}) => {
-    const { name, brand, image, price, description, type, _id } = product || {};
+    const { name, brand, image, price, description, type, _id ,ratting,} = product || {};
+
+    const handelAddCard =() =>{
+      const myCard = {
+        name,
+        brand,
+        description,
+        type,
+        price,
+        image,
+        ratting,
+      };
+      console.log(myCard);
+      // Send data to the server
+      fetch("http://localhost:5000/myproduct"
+      , {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(myCard), }
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          if(data.insertedId){
+              Swal.fire({
+                  title: 'Thank You!',
+                  text: 'Add to Card Successful',
+                  icon: 'success',
+                  confirmButtonText: 'Okay'
+                })
+          }
+        })
+        
+    }
     return (
         <div>
             <div className="mx-24 font-SometypeMono">
@@ -37,10 +73,10 @@ const ProductDetails = ({product}) => {
           <h3 className='text-center font-extrabold text-lg'>{description}</h3>
         </div>
         <div className="flex justify-center m-4">
-          <Link to={`/brand/${name}/${_id}`}>
-          <button className="btn bg-[#FF324D] rounded-lg mt-3 " type="button">
+          <>
+          <button onClick={handelAddCard} className="btn bg-[#FF324D] rounded-lg mt-3 " type="button">
             Add To Cart
-          </button></Link>
+          </button></>
         
         </div>
       </div>
