@@ -17,7 +17,7 @@ const ProductDetails = ({product}) => {
       };
       console.log(myCard);
       // Send data to the server
-      fetch("http://localhost:5000/myproduct"
+      fetch("https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/myproduct"
       , {
         method: "POST",
         headers: {

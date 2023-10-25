@@ -9,7 +9,7 @@ const BrandPage = () => {
     const  [brand , setBrand] = useState([]);
  
  useEffect(()=> {
-    fetch(`http://localhost:5000/brand/${name}`)
+    fetch(`https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/brand/${name}`)
     .then(res => res.json())
     .then(data => {
         setBrand(data);

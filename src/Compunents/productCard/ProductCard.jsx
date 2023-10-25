@@ -27,7 +27,7 @@ const ProductCard = ({myProduct , setProduct , products}) => {
   }).then((result) => {
     if (result.isConfirmed) {
       
-      fetch(`http://localhost:5000/myproduct/${_id}`,{
+      fetch(`https://fashion-and-apparel-shop-server-iy9nm9vnj-israt-jahans-projects.vercel.app/myproduct/${_id}`,{
 
         method: 'DELETE'
       })

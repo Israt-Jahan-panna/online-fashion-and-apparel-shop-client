@@ -182,7 +182,7 @@ const NavBar = () => {
         {user ? (
           <div className="flex gap-2 
           ">
-            <img className="rounded-lg w-4 h-4" src={user.photoURL} alt="" />
+            <img className="rounded-sm w-12 h-12" src={user.photoURL} alt="" />
             <p className="text-xs ">{user.displayName}</p>
             <button onClick={handelSingOut} className="btn  mb-2 rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
               Sing Out
