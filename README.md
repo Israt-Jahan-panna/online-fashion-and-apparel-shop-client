@@ -1,4 +1,5 @@
 # Fashion-and-apparel-Shop
+## [ Fashion-and-apparel-Shop Live link ](https://fashion-apparel-shop-client.web.app/)
 
 ## In this project we can shoping from home  . 
 Here Is 5 Feature  and functionalitis of this project:
@@ -10,7 +11,7 @@ Here Is 5 Feature  and functionalitis of this project:
 4. In this website have private routre loging system.
 
 5. In this website have we caan see fetured produt best sell product new rrived product .
-## [ Live link Fairbase clint site](https://fashion-apparel-shop-client.web.app/)
+
 ## [ Netlify clint site link]( https://fashionshop-isratjahanpanna.netlify.app/)
 
 ## [ Server site link vercel](https://fashion-and-apparel-shop-server-yw6zi8w68-israt-jahans-projects.vercel.app)
