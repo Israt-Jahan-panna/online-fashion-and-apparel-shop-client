@@ -1,6 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const BrandProduct = ({ product }) => {
   const { name, brand, image, price, rating, type, _id } = product || {};
 
@@ -49,9 +51,11 @@ const BrandProduct = ({ product }) => {
           </p>
         </div>
         <div className="flex justify-between m-4">
+          <Link to={`/updateproduct/${_id}`}>
           <button className="btn bg-[#FF324D] rounded-lg mt-3" type="button">
             Update
           </button>
+          </Link>
           <Link to={`/brand/${name}/${_id}`}>
             <button className="btn bg-[#FF324D] rounded-lg mt-3" type="button">
               Details
