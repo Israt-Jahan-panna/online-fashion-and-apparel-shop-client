@@ -23,7 +23,9 @@ const BrandPage = () => {
       <div>
         <BrandCarousel></BrandCarousel>
       </div>
+      
       <div className="grid md:grid-cols-2 lg:grid-cols-3 ">
+        
         {brand.length > 0 ? (
           brand.map((product) => (
             <BrandProduct key={product._id} product={product}></BrandProduct>
@@ -33,6 +35,7 @@ const BrandPage = () => {
             <p className="lg:text-3xl font-extrabold  items-center"> we are Sorry <br /> currently this Brands  product not avaiable . <br />Product will be comming soon <br />Thank You for visiting us </p>
           </div>
         )}
+        
       </div>
     </div>
   );
