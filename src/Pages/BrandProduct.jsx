@@ -16,7 +16,7 @@ const BrandProduct = ({ product }) => {
 
       { brand ? (
         // Product is available
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relative mb-3 flex w-96 h-[500px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
             <img src={image} alt="ui/ux review check" />
             <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>

@@ -48,7 +48,7 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
         },
         {
           path:"/updateproduct/:id", 
-          element:<UpdateProduct></UpdateProduct>,
+          element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
           loader: ({params}) => fetch(`https://fashion-and-apparel-shop-server-6ol0g5b2m-israt-jahans-projects.vercel.app/product/${params.id}`)
         },
         {
