@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 
 // eslint-disable-next-line react/prop-types
-const ProductCard = ({products}) => {
+const ProductCard = ({myProduct , setProduct , products}) => {
     const {
       _id,
         brand,
@@ -40,6 +40,8 @@ const ProductCard = ({products}) => {
             'Your product has been deleted.',
             'success'
           )
+          const remaining = myProduct.filter(pro => pro._id !== _id)
+          setProduct(remaining);
         }
       })
     }
