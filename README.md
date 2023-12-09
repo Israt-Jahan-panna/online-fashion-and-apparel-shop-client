@@ -12,9 +12,4 @@ Here Is 5 Feature  and functionalitis of this project:
 
 5. In this website have we caan see fetured produt best sell product new rrived product .
 
-## [ Server site link vercel](https://fashion-and-apparel-shop-server-yw6zi8w68-israt-jahans-projects.vercel.app)
-
-## [ github authentications ](https://github.com/Israt-Jahan-panna/fashion-and-apparel-shop-server-with-auth)
-## [ github clintsite link ](https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Israt-Jahan-panna)
-
 
