@@ -12,8 +12,6 @@ Here Is 5 Feature  and functionalitis of this project:
 
 5. In this website have we caan see fetured produt best sell product new rrived product .
 
-## [ Netlify clint site link]( https://fashionshop-isratjahanpanna.netlify.app/)
-
 ## [ Server site link vercel](https://fashion-and-apparel-shop-server-yw6zi8w68-israt-jahans-projects.vercel.app)
 
 ## [ github authentications ](https://github.com/Israt-Jahan-panna/fashion-and-apparel-shop-server-with-auth)
